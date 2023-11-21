@@ -1,34 +1,214 @@
 <!-- src/index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
-</head>
-<body>
-<body>
-        <div class="dark:bg-slate-900 dark:text-white pb-8 text-sm">
-            <div class="w-full flex justify-center py-8">
-                <button
-                    id="theme-toggle"
-                    class="p-2 rounded-full text-white bg-slate-900 dark:text-slate-900 dark:bg-white"
-                >
-                    Toggle theme
-                </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="">
+    <div class="h-screen dark:bg-slate-900 dark:text-white pb-8 text-sm">
+      <div class="w-full flex justify-center py-8">
+        <button
+          id="theme-toggle"
+          class="p-2 rounded-full text-white bg-slate-900 dark:text-slate-900 dark:bg-white"
+        >
+          Toggle theme
+        </button>
+      </div>
+      <div class="flex flex-col gap-4">
+        <section class="flex w-full justify-center">
+          <div
+            class="flex flex-col justify-center rounded-lg dark:bg-slate-800 bg-slate-400 w-96 p-4 gap-4"
+          >
+            <div class="flex">
+              <div class="flex items-center w-full justify-between">
+                <div class="flex gap-2 items-center">
+                  <div
+                    class="w-10 rounded-xl dark:bg-slate-700 bg-slate-200 p-2"
+                  >
+                    <svg
+                      class="w-full"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 dark:text-white"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                      />
+                    </svg>
+                  </div>
+                  <h4 class="text-lg font-bold">My schedule</h4>
+                </div>
+                <div class="w-6">
+                  <svg
+                    class="w-full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
-            <!-- Ecrivez le contenu à partir d'ici et supprimez le bloc suivant avant de commencer -->
             <div
-                class="h-40 w-1/2 border-gray-500 rounded border-2 mx-auto my-8 flex justify-center items-center"
+              class="flex flex-col rounded-lg border dark:border-slate-200 border-slate-700 dark:bg-slate-900 bg-slate-200 h-fit p-4 gap-4"
             >
-                Content goes here
+              <div class="flex w-full justify-between">
+                <div class="flex flex-col">
+                  <span class="text-slate-400">Tues, Jan 17 2023</span>
+                  <p>Shift name</p>
+                </div>
+                <div class="p-2 dark:bg-slate-200 bg-slate-700 rounded-lg">
+                  <p class="text-slate-200 dark:text-slate-900">In 45 Min</p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col rounded-lg border dark:border-slate-200 border-slate-700 p-4 gap-2"
+              >
+                <div class="flex justify-between">
+                  <p>07:00A - 03:00P</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+                <div class="flex gap-12">
+                    <p>7:00 - 10:00</p>
+                    <p>Drive thru</p>
+                </div>
+                <div class="flex gap-12">
+                    <p>7:00 - 10:00</p>
+                    <p>Drive thru</p>
+                </div>
+                <div class="flex gap-12">
+                    <p>7:00 - 10:00</p>
+                    <p>Drive thru</p>
+                </div>
+                <div class="flex gap-12">
+                    <p>7:00 - 10:00</p>
+                    <p>Drive thru</p>
+                </div>
+                <div class="flex gap-12">
+                    <p>7:00 - 10:00</p>
+                    <p>Drive thru</p>
+                </div>
+              </div>
+              <span class="text-slate-600 dark:text-slate-200">Shift disclaimer lorem ipsum dolor.</span>
             </div>
-        </div>
-        <script>
-            const btn = document.getElementById("theme-toggle");
-            btn.addEventListener("click", function () {
-                document.body.classList.toggle("dark");
-            });
-        </script>
-    </body>
+          </div>
+        </section>
+        <section class="flex w-full justify-center">
+          <div
+            class="flex flex-col justify-center rounded-lg dark:bg-slate-800 bg-slate-400 w-96 p-4 gap-4"
+          >
+            <div class="flex">
+              <div class="flex items-center w-full justify-between">
+                <div class="flex gap-2 items-center">
+                  <div
+                    class="w-10 rounded-xl dark:bg-slate-700 bg-slate-200 p-2"
+                  >
+                    <svg
+                      class="w-full"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 dark:text-white"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                      />
+                    </svg>
+                  </div>
+                  <h4 class="text-lg font-bold">My schedule</h4>
+                </div>
+                <div class="w-6">
+                  <svg
+                    class="w-full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col rounded-lg border dark:border-slate-200 border-slate-700 dark:bg-slate-900 bg-slate-200 h-fit p-4 gap-4"
+            >
+              <div class="flex w-full justify-between">
+                <div class="flex flex-col">
+                  <span class="text-slate-400">Tues, Jan 17 2023</span>
+                  <p>Shift name</p>
+                </div>
+                <div class="p-2 dark:bg-slate-200 bg-slate-700 rounded-lg">
+                  <p class="text-slate-200 dark:text-slate-900">In 45 Min</p>
+                </div>
+              </div>
+              <div
+                class="flex justify-between rounded-lg border dark:border-slate-200 border-slate-700 p-4"
+              >
+                <p>07:00A - 03:00P</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      const btn = document.getElementById("theme-toggle");
+      btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
 </html>
