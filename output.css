@@ -721,7 +721,7 @@ video {
 }
 
 .bg-banner-img {
-  background-image: url('/src/assets/images/img.jpeg');
+  background-image: url('./img.jpeg');
 }
 
 .bg-auto {
