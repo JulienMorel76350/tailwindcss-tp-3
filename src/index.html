@@ -7,8 +7,28 @@
   <link href="../dist/output.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+<body>
+        <div class="dark:bg-slate-900 dark:text-white pb-8 text-sm">
+            <div class="w-full flex justify-center py-8">
+                <button
+                    id="theme-toggle"
+                    class="p-2 rounded-full text-white bg-slate-900 dark:text-slate-900 dark:bg-white"
+                >
+                    Toggle theme
+                </button>
+            </div>
+            <!-- Ecrivez le contenu à partir d'ici et supprimez le bloc suivant avant de commencer -->
+            <div
+                class="h-40 w-1/2 border-gray-500 rounded border-2 mx-auto my-8 flex justify-center items-center"
+            >
+                Content goes here
+            </div>
+        </div>
+        <script>
+            const btn = document.getElementById("theme-toggle");
+            btn.addEventListener("click", function () {
+                document.body.classList.toggle("dark");
+            });
+        </script>
+    </body>
 </html>
