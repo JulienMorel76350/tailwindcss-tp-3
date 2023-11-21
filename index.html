@@ -1,0 +1,265 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="w-full h-screen justify-center flex">
+      <div
+        class="flex flex-col dark:bg-secondary bg-primary max-w-[380px] w-full p-2 rounded-2xl max-h-[800px] items-center h-screen m-auto"
+      >
+        <nav class="flex justify-between w-full h-fit items-center">
+          <div class="bg-light p-2 rounded-full h-fit w-10 dark:bg-dark">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-full dark:text-light text-dark"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <div
+            class="flex bg-light dark:bg-dark p-2 rounded-2xl items-center gap-2"
+          >
+            <p class="font-bold text-dark dark:text-light">Take The Quiz</p>
+            <div class="p-2 bg-dark dark:bg-light rounded-full w-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-full text-light dark:text-dark"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="flex gap-1">
+            <div
+              class="w-10 rounded-full p-2 h-fit bg-light dark:bg-dark"
+              id="theme-toggle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-full text-dark dark:text-light"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                />
+              </svg>
+            </div>
+            <div class="p-px border rounded-full w-4 h-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-full dark:text-light text-dark"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+            </div>
+          </div>
+        </nav>
+        <section class="flex">
+          <div class="flex my-6">
+            <h2 class="text-6xl inline dark:text-light">
+              Simplify your health
+              <svg
+                viewBox="0 0 35.4113 67.2004"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 rotate-[30deg] inline"
+              >
+                <rect
+                  x="0.255737"
+                  y="0.52829"
+                  width="35.4113"
+                  height="67.2004"
+                  rx="17.7057"
+                  fill="#D9EAFD"
+                />
+              </svg>
+
+              and wellbeing.
+              <svg
+                viewBox="0 0 70.7011 70.7011"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 inline"
+              >
+                <rect
+                  x="0.61084"
+                  y="30.7361"
+                  width="70.7011"
+                  height="9.79788"
+                  rx="4.89894"
+                  fill="#FEF189"
+                />
+                <rect
+                  x="40.8604"
+                  y="0.533691"
+                  width="70.7011"
+                  height="9.79788"
+                  rx="4.89894"
+                  transform="rotate(90 40.8604 0.533691)"
+                  fill="#FEF189"
+                />
+                <rect
+                  x="15.977"
+                  y="15.8999"
+                  width="39.9687"
+                  height="39.9687"
+                  rx="19.9844"
+                  fill="#FEF189"
+                />
+              </svg>
+            </h2>
+          </div>
+        </section>
+        <section
+          class="bg-light dark:bg-dark rounded-2xl shadow flex flex-col w-full text-dark dark:text-light overflow-hidden"
+        >
+          <div class="flex justify-between p-4">
+            <div class="flex gap-2">
+              <div class="p-2 border rounded-2xl h-fit">
+                <p>About01</p>
+              </div>
+              <div class="p-2 border rounded-full w-10 h-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-full dark:text-light text-dark"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="p-2 border rounded-full w-12 h-12">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-full dark:text-light text-dark"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="flex p-4 text-lg pr-12">
+            <p>
+              Receive daily packs personalized to your
+              <strong>unique healt needs.</strong>
+            </p>
+          </div>
+          <div class="h-screen max-h-[260px]">
+            <div
+              class="flex h-full bg-center max-h-full bg-banner-img bg-cover bg-no-repeat p-4 items-end"
+            >
+              <div
+                class="p-2 gap-2 dark:bg-dark bg-light w-fit rounded-2xl flex h-fit"
+              >
+                <div class="p-2 border rounded-full w-fit h-fit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4 dark:text-light text-dark"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="py-1 px-2 w-fit h-fit border rounded-full"
+                >
+                  <i class="ri-leaf-line dark:text-light text-dark w-full"></i>
+                </div>
+                <div class="py-1 px-2 w-fit h-fit border rounded-full">
+                  <i
+                    class="ri-recycle-line dark:text-light text-dark w-full"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div
+          class="bg-dark mt-4 rounded-2xl w-full p-6 dark:bg-light text-light dark:text-dark flex justify-between"
+        >
+          <p class="text-sm">
+            Unlock <span class="font-bold">personalized</span> plan.
+          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </div>
+      </div>
+    </main>
+    <script>
+      const btn = document.getElementById("theme-toggle");
+      btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
